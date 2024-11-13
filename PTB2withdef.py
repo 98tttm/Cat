@@ -1,4 +1,12 @@
-from PTB1withdef import PTB1
+def PTB1(a,b):
+    if a==0 and b == 0:
+        return "Vô số nghiệm"
+    elif    a==0 and b != 0:
+        return "Vô nghiệm"
+    else:
+        x  = round(-b/a,2)
+        return "Nghiệm x là:",x
+
 def PTB2(a,b,c):
     if a == 0:
         return PTB1(b,c)
